@@ -1,0 +1,86 @@
+.portfolio-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-image {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.styled-card {
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.facebook-icon {
+    width: 25px;
+    height: auto;
+}
+
+.youtube-icon {
+    width: 45px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.footer {
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+}
+
+.slideshow-image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.small-image {
+    width: 60%;
+    max-width: 360px;
+    height: auto;
+    padding: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
