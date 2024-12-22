@@ -51,7 +51,38 @@
 }
 
 .footer {
-    background-color: #808080;
-    color: white;
-    padding: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #9e5b03;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px; /* ลด padding สำหรับหน้าจอเล็ก */
+    }
+
+    .cta-button {
+        font-size: 14px; /* ลดขนาดฟอนต์สำหรับปุ่ม */
+        padding: 8px 16px; /* ลด padding สำหรับปุ่ม */
+    }
+
+    .custom-image {
+        max-width: 100%; /* ทำให้ภาพเต็มความกว้าง */
+    }
+
+    .styled-card {
+        padding: 15px; /* ลด padding สำหรับการ์ด */
+    }
+
+    .footer {
+        font-size: 12px; /* ลดขนาดฟอนต์ใน footer */
+        padding: 10px; /* ลด padding ใน footer */
+    }
 }

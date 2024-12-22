@@ -8,13 +8,16 @@ function Home() {
 
     return (
         <div className="home-container">
-            <h1>Portfolio</h1>
-            <h2>Khajornsak Suksila</h2>
-            <h2>Computer Engineering</h2>
-            <p>Welcome to my portfolio! Here you can find my projects and skills.</p>
-            {/* <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> */}
-            {/* <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a> */}
-            <img src="https://www.thebangkokinsight.com/wp-content/uploads/2020/06/%E0%B8%9A%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%B4%E0%B8%95.jpg" alt="Description" className="image-frame custom-image" />
+            <div className="card">
+                <div className="text-content">
+                    <h1>About Me</h1>
+                    
+                    <h3>I possess a strong background in data science, with foundational skills in data analysis and problem-solving. During my internship in web development at a government agency, I worked on designing, coding, and maintaining responsive websites, collaborating with teams to optimize performance and ensure user-friendly interfaces. This experience enhanced my expertise in web development, UX/UI design, and utilizing frameworks like Bootstrap and JavaScript libraries. I am adaptable, work well under pressure, and am committed to continuous learning, enabling me to contribute to the development of innovative solutions.</h3>
+                </div>
+                <img src={require('../asset/images/image_spa.png')} alt="Description" className="image-frame custom-image" />
+                <h2>Khajornsak Suksila</h2>
+                <h2>Computer Engineering</h2>
+            </div>
             <footer className="footer">
                 <p>© 2024 Khajornsa Suksila. Computer Engineering </p>
                 <div className="contact-icons">
@@ -31,6 +34,7 @@ function Home() {
                 </div>
             </footer>
         </div>
+        
     );
 }
 
