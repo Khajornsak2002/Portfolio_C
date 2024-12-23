@@ -32,24 +32,26 @@ function App() {
           <div className={`bar`}></div>
         </div>
         <ul className={`nav-list ${isMenuOpen ? 'open' : ''}`}>
-          <li><NavLink to="/home" onClick={() => handleMenuClick('/home')} className={activeMenu === '/home' ? 'active' : ''}>หน้าแรก</NavLink></li>
-          <li><NavLink to="/about" onClick={() => handleMenuClick('/about')} className={activeMenu === '/about' ? 'active' : ''}>ประวัติส่วนตัว</NavLink></li>
-          <li><NavLink to="/portfolio" onClick={() => handleMenuClick('/portfolio')} className={activeMenu === '/portfolio' ? 'active' : ''}>ผลงาน</NavLink></li>
+          <li><NavLink to="/home" onClick={() => handleMenuClick('/home')} className={activeMenu === '/home' ? 'active' : ''}>Home</NavLink></li>
+          <li><NavLink to="/about" onClick={() => handleMenuClick('/about')} className={activeMenu === '/about' ? 'active' : ''}>About me</NavLink></li>
+          <li><NavLink to="/portfolio" onClick={() => handleMenuClick('/portfolio')} className={activeMenu === '/portfolio' ? 'active' : ''}>Experiences</NavLink></li>
           <li><NavLink to="/programmer-works" onClick={() => handleMenuClick('/programmer-works')} className={activeMenu === '/programmer-works' ? 'active' : ''}>ผลงาน Programmer</NavLink></li>
           <li><NavLink to="/activities" onClick={() => handleMenuClick('/activities')} className={activeMenu === '/activities' ? 'active' : ''}>กิจกรรม</NavLink></li>
           <li><NavLink to="/certificates" onClick={() => handleMenuClick('/certificates')} className={activeMenu === '/certificates' ? 'active' : ''}>เกียรติบัตร</NavLink></li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/programmer-works" element={<ProgrammerWorks />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/certificates" element={<Certificates />} />
-      </Routes>
+      <div style={{ paddingTop: '60px' }}>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/programmer-works" element={<ProgrammerWorks />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/certificates" element={<Certificates />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

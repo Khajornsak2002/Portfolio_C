@@ -58,6 +58,10 @@ li {
 
 .navbar {
   font-family: 'Your Font Name', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-list {
