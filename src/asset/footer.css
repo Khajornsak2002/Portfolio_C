@@ -1,0 +1,91 @@
+/* Footer Container */
+.page-footer {
+    color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%; /* ทำให้ footer กว้างเต็มจอ */
+    margin: 0; /* ไม่ให้มีการเว้นระยะขอบด้านซ้ายและขวา */
+    position: relative; /* ใช้ absolute เพื่อให้ footer อยู่ที่ด้านล่าง */
+    bottom: 0; /* วาง footer ที่ด้านล่าง */
+    left: 0; /* ขยายจากซ้ายสุด */
+}
+
+/* Text in Footer */
+.page-footer .text-uppercase {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f5f5f5;
+}
+
+.page-footer .list-unstyled {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.page-footer .list-unstyled li {
+    padding: 8px 0;
+}
+
+/* Links in Footer */
+.page-footer a {
+    color: #ffffff; /* เปลี่ยนเป็นสีขาว */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+    color: #007bff;
+}
+
+/* Footer Section */
+.page-footer .footer-copyright {
+    color: #f6f7f8;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.page-footer .footer-copyright a {
+    color: #f2f3f3;
+}
+
+.page-footer .footer-copyright a:hover {
+    color: #5d7a99;
+}
+
+/* Contact Icon Styling */
+.page-footer .instagram-icon,
+.page-footer .youtube-icon {
+    margin-right: 15px;
+    font-size: 2rem; /* ขยายขนาดไอคอนให้เท่ากัน */
+    transition: color 0.3s ease;
+}
+
+.page-footer .facebook-icon {
+    margin-right: 15px;
+    width: 39px;
+    font-size: 2rem; /* ขยายขนาดไอคอนให้เท่ากัน */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.page-footer .facebook-icon:hover {
+    color: #326dec;
+}
+
+.page-footer .instagram-icon:hover {
+    color: #e4405f;
+}
+
+.page-footer .youtube-icon:hover {
+    color: #ff0000;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .page-footer .row {
+        text-align: center;
+    }
+    .page-footer .col-md-3 {
+        margin-bottom: 20px;
+    }
+}

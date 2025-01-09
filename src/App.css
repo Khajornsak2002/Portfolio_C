@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -137,11 +139,18 @@ li {
   color: #ffffff;
   font-weight: bold;
   padding: 10px 15px;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent; /* เส้นใต้เริ่มต้นโปร่งใส */
 }
 
 .nav-list a:hover {
   color: rgb(37, 163, 6);
+  border-bottom: 2px solid rgb(37, 163, 6); /* เส้นใต้เมื่อ hover */
+}
+
+.nav-list a.active {
+  border-bottom: 2px solid rgb(23, 233, 76); /* เส้นใต้เมื่อเลือก */
+  color: rgb(23, 233, 76); /* เปลี่ยนสีลิงก์เมื่อเลือก */
 }
 
 .menu-icon:active .bar {

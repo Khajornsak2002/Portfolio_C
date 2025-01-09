@@ -23,6 +23,7 @@ function App() {
     setMenuOpen(false);
   };
 
+
   return (
     <Router>
       <nav className="navbar">
@@ -47,9 +48,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/programmer-works" element={<ProgrammerWorks />} />
+          {/* <Route path="/programmer-works" element={<ProgrammerWorks />} />
           <Route path="/activities" element={<Activities />} />
-          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/certificates" element={<Certificates />} /> */}
         </Routes>
       </div>
     </Router>

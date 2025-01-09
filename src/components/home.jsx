@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import '../asset/component/home.css';
 import { FaFacebook, FaYoutube, FaInstagramSquare } from 'react-icons/fa';
+import { FaUsers, FaLightbulb, FaBrain, FaComments } from 'react-icons/fa';
 import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md';
+import { SiC, SiCplusplus, SiPython, SiPhp, SiJavascript, SiHtml5, SiCss3, SiTableau, SiFigma } from 'react-icons/si';
+import '../asset/footer';
+import Footer from '../asset/footer';
+
 
 
 function Home() {
@@ -40,29 +45,31 @@ function Home() {
                 </div>
                 <div className="card-soft-skill">
                     <h2>Soft Skills</h2>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Problem-solving</li>
+                    <ul className="soft-skill-list">
+                        <li><FaUsers className="soft-skill-icon" /> Team Leadership</li>
+                        <li><FaLightbulb className="soft-skill-icon" /> Problem Solving</li>
+                        <li><FaBrain className="soft-skill-icon" /> Analyze Complex Problems</li>
+                        <li><FaComments className="soft-skill-icon" /> Communication</li>
                     </ul>
                 </div>
                 <div className="card-hard-skill">
                     <h2>Hard Skills</h2>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Data Analysis</li>
+                    <ul className="skill-grid">
+                        <li><SiC className="skill-icon" /> Program C</li>
+                        <li><SiCplusplus className="skill-icon" /> Program C++</li>
+                        <li><SiPython className="skill-icon" /> Program Python</li>
+                        <li><SiPhp className="skill-icon" /> Program PHP</li>
+                        <li><SiJavascript className="skill-icon" /> JavaScript</li>
+                        <li><SiHtml5 className="skill-icon" /> HTML</li>
+                        <li><SiCss3 className="skill-icon" /> CSS</li>
+                        <li><SiFigma className="skill-icon" /> UX/UI</li>
                     </ul>
                 </div>
             </div>
 
             <div className="footer-contact">
-                <p>© 2024 Khajornsa Suksila. Computer Engineering </p>
-                <div className="contact-icons">
-                    <FaFacebook className="facebook-icon" onClick={() => window.open("https://www.facebook.com/aaon.khajornsak.7", "_blank")} />
-                    <FaInstagramSquare className="instagram-icon" onClick={() => window.open("https://www.instagram.com/aon_er2002/", "_blank")} />  
-                    <FaYoutube className="youtube-icon" onClick={() => window.open("https://www.youtube.com/channel/UCkDFnlvcIB1ofHnNl6B2tUQ", "_blank")} />  
-                </div>
+                {/* <p>© 2024 Khajornsa Suksila. Computer Engineering </p> */}
+                <Footer></Footer>
             </div>
 
         </div>

@@ -15,6 +15,7 @@
     color: #ffffff; /* สีตัวอักษรสำหรับโหมดมืด */
 }
 
+
 .card-skill {
     margin-top: 10px;
     width: 100%;
@@ -28,16 +29,78 @@
     border-radius: 8px;
 }
 
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์สำหรับหน้าจอใหญ่ */
+    gap: 20px; /* ระยะห่างระหว่างรายการ */
+    list-style: none; /* ลบจุดหน้ารายการ */
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.skill-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px; /* ขนาดข้อความ */
+    color: #ffffff;
+}
+
+.soft-skill-list {
+    list-style: none; /* ลบจุดหน้ารายการ */
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* จัด 2 คอลัมน์ */
+    gap: 15px; /* ระยะห่างระหว่างรายการ */
+}
+
+.soft-skill-list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fafafa;
+}
+
+.soft-skill-icon {
+    font-size: 40px; /* ขนาดไอคอน */
+    color: #007bff; /* สีของไอคอน */
+    margin-right: 10px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+.skill-icon {
+    font-size: 40px; /* ขนาดไอคอน */
+    color: #2d89ff; /* สีของไอคอน */
+    margin-bottom: 8px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+}
+
+
 .text-content {
     flex: 1;
     text-align: center;
     margin-right: 20px;
 }
 
-@media (max-width: 600px) {
-    .card {
-        width: 95%;
-        margin: 0 auto;
+/* Media Query สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 1024px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์สำหรับหน้าจอแท็บเล็ต */
+    }
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 คอลัมน์สำหรับหน้าจอมือถือ */
+    }
+
+    .skill-icon {
+        font-size: 30px; /* ปรับขนาดไอคอนเล็กลง */
+    }
+
+    .skill-grid li {
+        font-size: 12px; /* ปรับขนาดข้อความเล็กลง */
     }
 }
 
@@ -74,11 +137,13 @@
 }
 
 .footer-contact {
-    color: #ffffff; /* เปลี่ยนสีตัวหนังือเป็นสีขว */
-    padding: 20px; /* เพิ่ม padding เพื่อให้ดูดีขึ้น */
-    text-align: center; /* จัดข้อความให้อยู่กลาง */
-    margin-top: 50px; /* เพิ่ม margin เพื่อให้กรอบอยู่กึ่งกลาง */
-    max-width: 800px; /* กำหนดความกว้างสูงสุดของกรอบ */
+    color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%; /* ทำให้ footer กว้างเต็มจอ */
+    margin: 0; /* ไม่ให้มีการเว้นระยะขอบด้านซ้ายและขวา */
+    position: relative;
+    bottom: 0;
 }
 
 .contact-icons {
